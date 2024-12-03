@@ -28,6 +28,7 @@
 
     <properties>
         <google.libraries.version>26.47.0</google.libraries.version>
+        <protobuf.version>3.25.5</protobuf.version>
     </properties>
 
     <dependencyManagement>
@@ -44,6 +45,17 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>33.3.1-jre</version>
+            </dependency>
+            <!-- Override Protobuf Java 3.25.4 from google-cloud-core -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java-util</artifactId>
+                <version>${protobuf.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
