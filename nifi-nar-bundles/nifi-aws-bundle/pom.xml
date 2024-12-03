@@ -29,6 +29,7 @@
     <properties>
         <!-- keep KCL 1.x until NIFI-8531 (blocked by NIFI-8287) -->
         <aws-kinesis-client-library-version>1.15.0</aws-kinesis-client-library-version>
+        <protobuf.version>3.25.5</protobuf.version>
     </properties>
 
     <modules>
