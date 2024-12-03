@@ -21,6 +21,7 @@
     <properties>
         <accumulo.version>2.0.1</accumulo.version>
         <guava.version>33.3.1-jre</guava.version>
+        <protobuf.version>3.25.5</protobuf.version>
     </properties>
 
     <artifactId>nifi-accumulo-bundle</artifactId>
@@ -106,6 +107,12 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+            <!-- Override Protobuf Java 3.7.1 from accumulo-core -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
