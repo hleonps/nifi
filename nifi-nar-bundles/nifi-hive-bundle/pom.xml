@@ -139,6 +139,7 @@
         <avatica.version>1.25.0</avatica.version>
         <calcite.version>1.38.0</calcite.version>
         <calcite.avatica.version>1.6.0</calcite.avatica.version>
+        <protobuf.version>3.25.5</protobuf.version>
     </properties>
 
     <build>

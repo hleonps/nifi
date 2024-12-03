@@ -27,6 +27,7 @@
 
     <properties>
         <hbase.version>2.5.5-hadoop3</hbase.version>
+        <protobuf.version>3.25.5</protobuf.version>
     </properties>
 
     <modules>
@@ -79,6 +80,12 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>33.3.1-jre</version>
+            </dependency>
+            <!-- Override protobuf-java 2.5.0 from HBase -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

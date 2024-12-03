@@ -225,6 +225,13 @@
             </exclusions>
         </dependency>
 
+        <!-- Override protobuf-java 2.5.0 from Hive -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>${protobuf.version}</version>
+        </dependency>
+
         <!-- Test dependencies -->
         <dependency>
             <groupId>org.apache.hadoop</groupId>

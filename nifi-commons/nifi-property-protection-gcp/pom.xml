@@ -24,6 +24,7 @@
     <properties>
         <gcp.sdk.version>26.40.0</gcp.sdk.version>
         <guava.version>33.3.1-jre</guava.version>
+        <protobuf.version>3.25.5</protobuf.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -56,6 +57,18 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
+        </dependency>
+        <!-- Override protobuf-java 3.25.3 from google-cloud-kms -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>${protobuf.version}</version>
+        </dependency>
+        <!-- Override protobuf-java-util 3.25.3 from google-cloud-kms -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java-util</artifactId>
+            <version>${protobuf.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.cloud</groupId>

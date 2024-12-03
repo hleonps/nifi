@@ -24,6 +24,7 @@
     <packaging>pom</packaging>
     <properties>
         <hadoop.version>2.7.3</hadoop.version>
+        <protobuf.version>3.25.5</protobuf.version>
     </properties>
     <modules>
         <module>nifi-hbase_1_1_2-client-service</module>
@@ -108,6 +109,12 @@
                         <artifactId>logback-classic</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <!-- Override protobuf-java 2.5.0 from HBase -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

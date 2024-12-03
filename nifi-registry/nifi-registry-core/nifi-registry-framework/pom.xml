@@ -437,6 +437,12 @@
             <artifactId>nifi-property-protection-api</artifactId>
             <version>1.29.0-SNAPSHOT</version>
         </dependency>
+        <!-- Override protobuf-java-util 3.25.3 from google-cloud-kms -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java-util</artifactId>
+            <version>3.25.5</version>
+        </dependency>
     </dependencies>
 
     <profiles>
