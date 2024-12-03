@@ -23,6 +23,7 @@
     <packaging>pom</packaging>
     <properties>
         <guava.version>33.3.1-jre</guava.version>
+        <protobuf.version>3.25.5</protobuf.version>
     </properties>
     <modules>
         <module>nifi-sql-reporting-tasks</module>
@@ -46,6 +47,12 @@
                 <groupId>org.codehaus.janino</groupId>
                 <artifactId>commons-compiler</artifactId>
                 <version>3.1.10</version>
+            </dependency>
+            <!-- Override protobuf-java 3.21.9 from avatica-core -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.janino</groupId>

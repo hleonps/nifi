@@ -394,6 +394,12 @@
             <artifactId>zip4j</artifactId>
             <version>2.11.5</version>
         </dependency>
+        <!-- Override protobuf-java 3.21.9 from avatica-core -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>${protobuf.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

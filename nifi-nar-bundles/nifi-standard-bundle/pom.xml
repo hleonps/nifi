@@ -38,6 +38,7 @@
         <jolt.version>0.1.8</jolt.version>
         <org.apache.sshd.version>2.14.0</org.apache.sshd.version>
         <tika.version>2.9.2</tika.version>
+        <protobuf.version>3.25.5</protobuf.version>
     </properties>
     <dependencyManagement>
         <dependencies>
