@@ -86,6 +86,10 @@
             <version>${hive11.version}</version>
             <exclusions>
                 <exclusion>
+                    <groupId>io.airlift</groupId>
+                    <artifactId>aircompressor</artifactId>
+                </exclusion>
+                <exclusion>
                     <groupId>org.json</groupId>
                     <artifactId>json</artifactId>
                 </exclusion>
@@ -110,6 +114,12 @@
                     <artifactId>commons-logging</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <!-- Override aircompressor from hive-jdbc -->
+        <dependency>
+            <groupId>io.airlift</groupId>
+            <artifactId>aircompressor</artifactId>
+            <version>0.27</version>
         </dependency>
         <dependency>
             <groupId>org.apache.hive.hcatalog</groupId>
