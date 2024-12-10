@@ -80,6 +80,19 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
+        <!-- Override commons-configuration2 2.8.0 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-configuration2</artifactId>
+            <version>${commons-configuration2.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
         <!-- test -->
         <dependency>
             <groupId>org.apache.nifi</groupId>
