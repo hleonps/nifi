@@ -172,6 +172,7 @@
         <calcite.version>1.38.0</calcite.version>
         <calcite.avatica.version>1.6.0</calcite.avatica.version>
         <protobuf.version>3.25.5</protobuf.version>
+        <guava.version>33.3.1-jre</guava.version>
     </properties>
 
     <build>

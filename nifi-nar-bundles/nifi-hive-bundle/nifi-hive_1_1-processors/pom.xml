@@ -80,6 +80,12 @@
             <artifactId>protobuf-java</artifactId>
             <version>${protobuf.version}</version>
         </dependency>
+        <!-- Override Guava 14.0.1 from Hive -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-jdbc</artifactId>
