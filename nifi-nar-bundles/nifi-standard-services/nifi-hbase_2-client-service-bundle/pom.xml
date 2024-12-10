@@ -28,6 +28,7 @@
     <properties>
         <hbase.version>2.5.5-hadoop3</hbase.version>
         <protobuf.version>3.25.5</protobuf.version>
+        <commons-configuration2.version>2.11.0</commons-configuration2.version>
     </properties>
 
     <modules>
@@ -86,6 +87,12 @@
                 <groupId>com.google.protobuf</groupId>
                 <artifactId>protobuf-java</artifactId>
                 <version>${protobuf.version}</version>
+            </dependency>
+            <!-- Override commons-configuration2 2.1.1 from HBase -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-configuration2</artifactId>
+                <version>${commons-configuration2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
