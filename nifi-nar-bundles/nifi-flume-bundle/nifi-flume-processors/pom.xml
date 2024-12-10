@@ -25,6 +25,7 @@
 
     <properties>
         <flume.version>1.11.0</flume.version>
+        <guava.version>33.3.1-jre</guava.version>
         <protobuf.version>3.25.5</protobuf.version>
     </properties>
 
@@ -199,6 +200,13 @@
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
             <version>${protobuf.version}</version>
+        </dependency>
+
+        <!-- Override Guava 11.0.2 from flume-ng-core -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
         </dependency>
 
         <dependency>
