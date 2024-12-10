@@ -26,6 +26,7 @@
     <packaging>jar</packaging>
     <properties>
         <hbase.version>1.1.13</hbase.version>
+        <guava.version>33.3.1-jre</guava.version>
     </properties>
     <dependencies>
         <dependency>
@@ -136,6 +137,14 @@
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
         </dependency>
+
+        <!-- Override Guava 12.0.1 from hbase-client -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+
         <!-- test dependencies -->
         <dependency>
             <groupId>org.apache.nifi</groupId>
