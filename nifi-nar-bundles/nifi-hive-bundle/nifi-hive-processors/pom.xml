@@ -101,6 +101,10 @@
                     <groupId>commons-logging</groupId>
                     <artifactId>commons-logging</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>org.apache.thrift</groupId>
+                    <artifactId>libthrift</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
         <!-- Override aircompressor from hive-jdbc -->
@@ -133,6 +137,10 @@
                 <exclusion>
                     <groupId>org.apache.ivy</groupId>
                     <artifactId>ivy</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.thrift</groupId>
+                    <artifactId>libthrift</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -185,6 +193,10 @@
                 <exclusion>
                     <groupId>org.apache.ivy</groupId>
                     <artifactId>ivy</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.thrift</groupId>
+                    <artifactId>libthrift</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
