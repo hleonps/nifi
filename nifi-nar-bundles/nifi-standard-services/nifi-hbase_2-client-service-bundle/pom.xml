@@ -26,7 +26,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <hbase.version>2.5.5-hadoop3</hbase.version>
+        <hbase.version>2.6.1-hadoop3</hbase.version>
         <protobuf.version>3.25.5</protobuf.version>
         <commons-configuration2.version>2.11.0</commons-configuration2.version>
     </properties>
